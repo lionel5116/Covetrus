@@ -22,7 +22,7 @@ export default class SimpleInterestCalculator extends LightningElement {
   }
 
   calculateSimpleInterestHandler() {
-      this.currentOutput = ' Simple Interest is: ' + (this.principle * this.rateOfInterest*this.noOfYears) / 100;
+      this.currentOutput = ' Simple Interest for this loan is: ' + (this.principle * this.rateOfInterest*this.noOfYears) / 100;
   }
 
 }
