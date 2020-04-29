@@ -42,4 +42,17 @@ private class CocoMocoUnitTests {
 
   }
 
+  @isTest static void testDidEmailSucessfullySend()
+  {
+    Boolean sendResult = false;
+    EmailUtility em = new EmailUtility();
+    
+       Test.startTest(); 
+       sendResult = em.sendMail('lioneljones5116@gmail.com', 'Order Processed',
+       'Your order was process with success on '
+       + ' great success');
+       Test.stopTest();
+       System.assertEquals(sendResult,true, 'Expected a return of true');
+  }
+
 }
